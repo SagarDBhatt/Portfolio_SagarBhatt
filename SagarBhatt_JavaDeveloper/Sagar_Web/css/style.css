@@ -1,0 +1,166 @@
+/*=============================================
+=                  General                    =
+=============================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+button:focus {
+    outline: none;
+}
+
+/*=============================================
+=                  Navbar                     =
+=============================================*/
+
+.navbar {
+    box-shadow: 0 3px 18px rgba(0, 0, 0, .11);
+}
+
+/*=============================================
+=                  Header                     =
+=============================================*/
+
+#header {
+    background-image: url(../img/GradImage.jpg);
+    background-size: cover;
+    /* 讓圖片固定在後方 */
+    background-attachment: fixed;
+    padding: 200px 0px;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+#header:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: black;
+    opacity: .2;
+    z-index: 1;
+}
+
+#header>.container {
+    z-index: 2;
+    position: relative;
+}
+
+/*=============================================
+=                  Intro                      =
+=============================================*/
+
+/*=============================================
+=                  Features                   =
+=============================================*/
+
+/*=============================================
+=                  Reviews                    =
+=============================================*/
+
+/*=============================================
+=                  Gallery                    =
+=============================================*/
+
+/* TODO: 設定Hover特效 */
+/* 屬性選擇器 */
+/* 選擇id開頭是galleryImage的元素 */
+[id^='galleryImage'] {
+    background-size: cover;
+    height: 220px;
+    filter: grayscale(100%);
+    transition: all .5s ease-out;
+}
+
+[id^='galleryImage']>.gallery-text {
+    font-size: 6px;
+    color: white;
+    opacity: 0;
+    line-height: 220px;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    text-align: center;
+    transition: all .3s ease-out;
+    transition-delay: .2s;
+}
+
+[id^='galleryImage']:hover {
+    filter: grayscale(0%);
+}
+
+[id^='galleryImage']>.gallery-text:hover{
+    font-size: 22px;
+    opacity: 1;
+}
+
+/* 放入背景圖片 */
+
+#galleryImage1 {
+    background-image: url('../img/galleryImage1.jpg');
+}
+
+#galleryImage2 {
+    background-image: url('../img/galleryImage2.jpg');
+}
+
+#galleryImage3 {
+    background-image: url('../img/galleryImage3.jpg');
+}
+
+#galleryImage4 {
+    background-image: url('../img/galleryImage4.jpg');
+}
+
+#galleryImage5 {
+    background-image: url('../img/galleryImage5.jpg');
+}
+
+#galleryImage6 {
+    background-image: url('../img/galleryImage6.jpg');
+}
+
+#galleryImage7 {
+    background-image: url('../img/galleryImage7.jpg');
+}
+
+#galleryImage8 {
+    background-image: url('../img/galleryImage8.jpg');
+}
+
+/*=============================================
+=                  Start Now                  =
+=============================================*/
+
+/*=============================================
+=                   Footer                    =
+=============================================*/
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-end p {
+    font-size: 8px;
+    margin: 0;
+}
+
+#goBackBtn {
+    width: 40px;
+    height: 40px;
+    border:none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+    border-radius: 50%;
+}
