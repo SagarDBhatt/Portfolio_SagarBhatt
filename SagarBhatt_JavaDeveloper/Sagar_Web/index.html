@@ -92,7 +92,7 @@
     <!-- pt-3 + pb-3 => py-3, mt-5 + mb-5 => my-5 -->
     <section id="introSection" class="pt-5 pb-5">
         <!-- TODO: 設定以下h1 margin-bottom為5倍 -->
-        <h1 class="section-title text-center text-secondary mb-5">About Me</h1>
+        <h1 class="section-title text-center text-secondary mb-5">Hi, and welcom to my website!</h1>
         <div class="container">
             <!-- TODO: 修正排版為三項排一排 並置中文字-->
             <div class="row text-center wow bounceInRight">
@@ -128,7 +128,13 @@
             <!-- TODO: 設定此區塊距離上方5倍margin -->
             <!-- TODO: 修正排版在md時六個排一排 sm三個排一排 sm以下兩個排一排-->
             <div class="row mt-5 wow bounceInLeft">
-                <div class="text-center col-md-2 col-sm-4 col-6">
+                <div class="details-label column eight post text-center">
+                    <!-- <h3>Hi, and welcom to my website!</h3> -->
+                    I'm Sagar Bhatt, a professional fullstack Java developer and software engineer.
+                    I am a tech-savvy person and like to keep myself updated with new softwares and technologies.
+                    I follow stackoverflow, Github, javaworld, javaranch and lot other technical websites. When I am not coding, I play guitar and keyboard ;)<br>
+
+                <!-- <div class="text-center col-md-2 col-sm-4 col-6">
                     <i class="fas fa-tree fa-2x text-secondary" aria-hidden="true"></i>
                     <h5 class="mt-3 text-secondary">Cozy Office</h5>
                 </div>
@@ -151,7 +157,7 @@
                 <div class="text-center col-md-2 col-sm-4 col-6">
                     <i class="fas fa-graduation-cap fa-2x text-secondary" aria-hidden="true"></i>
                     <h5 class="mt-3 text-secondary">Self-Learning</h5>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -160,29 +166,31 @@
     <!-- featuresSection -->
     <section id="featuresSection" class="py-5 bg-secondary text-white">
         <div class="container">
-            <h1 class="section-title mb-5 text-center">Skills</h1>
-            <!-- TODO: 設定此區寬度為8格網格 但是必須置中 -->
-            <!-- 
-                改變row裡面的對齊方式
-                .justify-content-center置中對齊
-                .               -end   靠右
-                .               -start 靠左
-             -->
+            <h1 class="section-title mb-5 text-center">TECHNICAL SKILLS</h1>
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <!-- TODO: 為article1 article2 設置collapse互動方式 一對一 -->
-                    <button data-target="#article1" data-toggle="collapse" class="btn btn-primary">Team</button>
-                    <button data-target="#article2" data-toggle="collapse" class="btn btn-primary">Location</button>
+                    <!-- TODO: Collapse Buttons -->
+                    <button data-target="#article1" data-toggle="collapse" class="btn btn-primary">Technologies</button>
+                    <button data-target="#article2" data-toggle="collapse" class="btn btn-primary">Database</button>
+                    <button data-target="#article3" data-toggle="collapse" class="btn btn-primary">Web Technologies</button>
+                    <button data-target="#article4" data-toggle="collapse" class="btn btn-primary">Tools </button>
+                    <button data-target="#article5" data-toggle="collapse" class="btn btn-primary">Frameworks & Libraries</button>
                     <!-- show預設呈現出來 -->
                     <article class="my-3 collapse show" id="article1">
-                        <h3>Team</h3>
-                        <p>Our team members started with only 10 people. We're Website developer, Security engineer,
-                            Graphic
-                            Designer, Information Architect , But before the company scaled up, we're all wears more
-                            than
-                            one hat. We provide different kinds of
-                            <strong>Project management, Security and Data Storage solution package</strong> for our
-                            customers </p>
+                        <!-- <h3>Java/JEE technologies</h3> -->
+                        <!-- <ul>
+                            <li>JAVA</li> 
+                            <li>J2EE</li>
+                            <li>JDBC</li>
+                            <li>JSP</li>
+                            <li>Servlets</li>
+                        </ul> -->
+                        <h3>Extensive knowledge of Frameworks, Tools and Methodologies</h3>
+                        <p> I have build an amazing things with technologies like 
+                            <strong>Java, J2EE, JDBC, Servlets, JSP, Java Beans, JSF, Struts, Spring 2.0/3.0/4.0, Hibernate, JTA, JMS</strong>    
+                        with Methodologies like Agile and Scrum
+                        </p>
+
                     </article>
                     <article class="my-3 collapse" id="article2">
                         <h3>Location</h3>
@@ -194,16 +202,16 @@
                     </article>
                     <!-- TODO: 加入導覽(nav)按鈕 -->
                     <!-- b4-nav-a -->
-                    <nav class="nav justify-content-center nav-pills">
-                        <!-- active目前正在看 -->
+                    <!-- <nav class="nav justify-content-center nav-pills">
+                        <!-- active目前正在看 
                         <a class="nav-link active" href="#article3" data-toggle="tab">Article 3</a>
                         <a class="nav-link" href="#article4" data-toggle="tab">Article 4</a>
                         <a class="nav-link" href="#article5" data-toggle="tab">Article 5</a>
-                    </nav>
+                    </nav> -->
                     <!-- tab要跟nav一起用 -->
                     <!-- TODO: 為article3 article4 設置tab互動方式 -->
                     <!-- tab => .tab-content > .tab-pane 把所有需要tab的元素包起來 -->
-                    <div class="tab-content">
+                    <!-- <div class="tab-content">
                         <article id="article3" class="my-3 tab-pane active">
                             <h3>Environment</h3>
                             <p>We have a cozy office environment not just create casual atmosphere for daily working
@@ -239,10 +247,10 @@
                             </p>
                         </article>
                     </div>
-                    <!-- TODO: 崁入一個youtube影片 https://www.youtube.com/watch?v=gwDoRPcPxtc -->
+                     TODO: 崁入一個youtube影片 https://www.youtube.com/watch?v=gwDoRPcPxtc 
                     <iframe width="100%" height="400" src="https://www.youtube.com/embed/gwDoRPcPxtc" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                        allowfullscreen></iframe> -->
                 </div>
             </div>
         </div>
